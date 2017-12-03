@@ -1,56 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Package
-  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  IgnorableNamespaces="uap mp">
-
-  <Identity
-    Name="aac41efd-193e-4b0c-ba7f-53c0ad711692"
-    Version="1.0.0.0"
-    Publisher="CN=cochu" />
-
-  <mp:PhoneIdentity PhoneProductId="aac41efd-193e-4b0c-ba7f-53c0ad711692" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="31170.24" Version="1.1.0.0" Publisher="CN=E700FA68-A7C6-4140-8B94-9B97866AB732" />
+  <mp:PhoneIdentity PhoneProductId="f6de26a4-22c0-44f0-a9ca-0efbce70e2bc" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Russia24</DisplayName>
-    <PublisherDisplayName>cochu</PublisherDisplayName>
+    <DisplayName>Россия24</DisplayName>
+    <PublisherDisplayName>Вова Дальний</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
-
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
   </Dependencies>
-
   <Resources>
     <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application 
-      Id="App"
-      StartPage="https://example.com">
-
+    <Application Id="App" StartPage="https://yastatic.net/yandex-video-player-iframe-api-bundles/1.0-236/?mq_url=https%3A%2F%2Fstrm.yandex.ru%2Fdvr%2Frussia24%2Frussia240.m3u8">
       <uap:ApplicationContentUriRules>
-        <uap:Rule Type="include" WindowsRuntimeAccess="all" Match="https://example.com" />
+        <uap:Rule Match="https://yastatic.net/yandex-video-player-iframe-api-bundles/1.0-236/?mq_url=https%3A%2F%2Fstrm.yandex.ru%2Fdvr%2Frussia24%2Frussia240.m3u8" Type="include" WindowsRuntimeAccess="all" />
       </uap:ApplicationContentUriRules>
-
-      <uap:VisualElements
-        DisplayName="Russia24"
-        Description="Russia24"
-        BackgroundColor="transparent"
-        Square150x150Logo="images\Square150x150Logo.png"
-        Square44x44Logo="images\Square44x44Logo.png">
-
-        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" />
-        <uap:SplashScreen Image="images\splashscreen.png" />
+      <uap:VisualElements DisplayName="Россия24" Description="Russia24" BackgroundColor="darkRed" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square310x310Logo="images\LargeTile.png" Square71x71Logo="images\SmallTile.png">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="images\splashscreen.png" BackgroundColor="darkRed" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="portraitFlipped" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
       </uap:VisualElements>
-
     </Application>
   </Applications>
-
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
-
 </Package>
