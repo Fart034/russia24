@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="31170.24" Version="1.1.0.0" Publisher="CN=E700FA68-A7C6-4140-8B94-9B97866AB732" />
+  <Identity Name="31170.24" Version="1.1.2.0" Publisher="CN=E700FA68-A7C6-4140-8B94-9B97866AB732" />
   <mp:PhoneIdentity PhoneProductId="f6de26a4-22c0-44f0-a9ca-0efbce70e2bc" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Россия24</DisplayName>
@@ -14,9 +14,10 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" StartPage="https://yastatic.net/yandex-video-player-iframe-api-bundles/1.0-236/?mq_url=https%3A%2F%2Fstrm.yandex.ru%2Fdvr%2Frussia24%2Frussia240.m3u8">
+    <Application Id="App" StartPage="https://player.vgtrk.com/iframe/live/id/21">
       <uap:ApplicationContentUriRules>
-        <uap:Rule Match="https://yastatic.net/yandex-video-player-iframe-api-bundles/1.0-236/?mq_url=https%3A%2F%2Fstrm.yandex.ru%2Fdvr%2Frussia24%2Frussia240.m3u8" Type="include" WindowsRuntimeAccess="all" />
+        <uap:Rule Match="https://player.vgtrk.com/iframe/live/id/21" Type="include" WindowsRuntimeAccess="all" />
+        <uap:Rule Match="https://vgtrk.com" Type="include" WindowsRuntimeAccess="all" />
       </uap:ApplicationContentUriRules>
       <uap:VisualElements DisplayName="Россия24" Description="Russia24" BackgroundColor="darkRed" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square310x310Logo="images\LargeTile.png" Square71x71Logo="images\SmallTile.png">
